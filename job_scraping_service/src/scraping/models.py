@@ -28,10 +28,18 @@ class Language(models.Model):
         return self.name
 
 class Vacancy(models.Model):
-    url = models.URLField()
-    title = models.CharField(max_length=250, verbose_name='')
-    company = models.CharField(max_length=250, verbose_name='')
-    description = models.TextField(verbose_name='')
-    city = models.ForeignKey('City', on_delete=models.CASCADE, verbose_name='')
+    url = models.URLField(unique=True)
+    title = models.CharField(max_length=250, verbose_name='Job Title')
+    company = models.CharField(max_length=250, verbose_name='Company')
+    description = models.TextField(verbose_name='Vacancy description')
+    city = models.ForeignKey('City', on_delete=models.CASCADE, verbose_name='City')
     language = models.ForeignKey('Language', on_delete=models.CASCADE,
-                                 verbose_name='')
+                                 verbose_name='Programming language')
+    timestamp = models.DateField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = 'Job vacancy'
+        verbose_name_plural = 'Jobs'
+
+    def __str__(self):
+        return self.title
