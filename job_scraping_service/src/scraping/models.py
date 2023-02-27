@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 
 # Create your models here.
 class City(models.Model):
@@ -10,6 +11,10 @@ class City(models.Model):
     class Meta:
         verbose_name='City name'
         verbose_name_plural='City names'
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(City, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.name
@@ -23,6 +28,10 @@ class Language(models.Model):
     class Meta:
         verbose_name = 'Programming language'
         verbose_name_plural = 'Programming languages'
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.name)
+        super(Language, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.name
@@ -40,6 +49,10 @@ class Vacancy(models.Model):
     class Meta:
         verbose_name = 'Job vacancy'
         verbose_name_plural = 'Jobs'
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super(Vacancy, self).save(*args, **kwargs)
 
     def __str__(self):
         return self.title
