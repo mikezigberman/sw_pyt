@@ -9,16 +9,22 @@
           <div class="card-body">
 
             <p class="card-text">{{ obj.description }}</p>
-            <p>{{obj.city.name }} | {{obj.language.name }} |
+              <p>{{obj.city.name }} | {{obj.language.name }} |
                   <small>{{obj.timestamp|date:"d-m-Y" }}</small></p>
-
           </div>
         </div>
-
+    {% empty %}
+        <h3 class="my-4 text-center">Unfortunately, your search returned no results.</h3>
     {% endfor %}
-<form method="GET" action="">
-{{ form.as_p }}
-  <input type="submit" value="Submit">
-</form>
-{% endblock %}
+<div class="row ">
+    <div class="col-md-6 mx-auto">
+    <form method="GET" action="">
+        <div class="form-group">
+        {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-primary">Find</button>
+    </form>
+    </div>
+</div>
 
+{% endblock %}
