@@ -1,0 +1,113 @@
+[
+{
+    "model": "scraping.city",
+    "pk": 1,
+    "fields": {
+        "name": "Amsterdam",
+        "slug": ""
+    }
+},
+{
+    "model": "scraping.city",
+    "pk": 3,
+    "fields": {
+        "name": "Paris",
+        "slug": "paris"
+    }
+},
+{
+    "model": "scraping.city",
+    "pk": 4,
+    "fields": {
+        "name": "Prague",
+        "slug": "prague"
+    }
+},
+{
+    "model": "scraping.city",
+    "pk": 5,
+    "fields": {
+        "name": "Boston",
+        "slug": "boston"
+    }
+},
+{
+    "model": "scraping.city",
+    "pk": 6,
+    "fields": {
+        "name": "Warsaw",
+        "slug": "warsaw"
+    }
+},
+{
+    "model": "scraping.city",
+    "pk": 7,
+    "fields": {
+        "name": "Oslo",
+        "slug": "oslo"
+    }
+},
+{
+    "model": "scraping.language",
+    "pk": 1,
+    "fields": {
+        "name": "Python",
+        "slug": ""
+    }
+},
+{
+    "model": "scraping.language",
+    "pk": 2,
+    "fields": {
+        "name": "Java",
+        "slug": "java"
+    }
+},
+{
+    "model": "scraping.language",
+    "pk": 3,
+    "fields": {
+        "name": "C++",
+        "slug": "cpp"
+    }
+},
+{
+    "model": "scraping.vacancy",
+    "pk": 1,
+    "fields": {
+        "url": "https://www.glassdoor.com/Job/prague-python-developer-junior-jobs-SRCH_IL.0,6_IC2296178_KO7,30.htm?src=GD_JOB_AD&srs=ALL_RESULTS&jl=1008447256881&ao=1110586&s=345&guid=000001868f4e7b5ea6153d79f2fb01b2",
+        "title": "Python Developer Junior",
+        "company": "CGI Group, Inc.",
+        "description": "Hlavn\u011b nad\u0161en\u00ed a z\u00e1jem d\u00e1le se rozv\u00edjet a u\u010dit se od na\u0161ich technick\u00fdch borc\u016f, d\u00e1l u\u017e to p\u016fjde samo :-)\r\nA\u010dkoliv t\u011b budeme u\u010dit a v\u00e9st, alespo\u0148 n\u011bjak\u00e1 zku\u0161enost s Python se na za\u010d\u00e1tek hod\u00ed\r\nPov\u011bdom\u00ed o SQL a NO-SQL datab\u00e1z\u00ed by bylo fajn\r\nStejn\u011b tak zn\u00e1t n\u011bco z HTML a XML nebude na \u0161kodu\r\nAngli\u010dtina je intern\u00ed komunika\u010dn\u00ed jazyk, bude\u0161 se muset um\u011bt dorozum\u011bt, taky pot\u0159ebujeme plynulou \u010de\u0161tinu/sloven\u0161tinu\r\nZajem o deskovky a/nebo stolni fotbalek :-)",
+        "city": 4,
+        "language": 1,
+        "timestamp": "2023-02-26"
+    }
+},
+{
+    "model": "scraping.vacancy",
+    "pk": 2,
+    "fields": {
+        "url": "https://www.glassdoor.com/Job/prague-python-developer-junior-jobs-SRCH_IL.0,6_IC2296178_KO7,30.htm?includeNoSalaryJobs=true&jl=1007600219042",
+        "title": "Python developer",
+        "company": "ISECO.CZ s.r.o.",
+        "description": "CO HLED\u00c1ME\r\nN\u011bkoho, kdo m\u00e1 v mal\u00edku nebo mu alespo\u0148 nen\u00ed ciz\u00ed:\r\n\r\nPython s objektov\u00fdm p\u0159\u00edstupem, multi-threadingem, o\u0161et\u0159ov\u00e1n\u00edm chyb a logov\u00e1n\u00edm, frameworkem Flask,\r\nverzovac\u00ed syst\u00e9my (GIT),\r\nzku\u0161enosti s linuxov\u00fdmi syst\u00e9my,\r\nz\u00e1kladn\u00ed orientace v s\u00edt\u00edch a s\u00ed\u0165ov\u00fdch protokolech,\r\nzku\u0161enosti s SQL a n\u00e1vrhem datab\u00e1z\u00ed (pou\u017e\u00edv\u00e1me hlavn\u011b PostgreSQL/SQLite),\r\nz\u00e1jem a z\u00e1kladn\u00ed orientaci v oblasti informa\u010dn\u00ed a IT bezpe\u010dnosti,\r\nsamostatn\u00fd a odpov\u011bdn\u00fd p\u0159\u00edstup a r\u00e1d dotahuje\u0161 v\u011bci do konce.",
+        "city": 4,
+        "language": 1,
+        "timestamp": "2023-02-26"
+    }
+},
+{
+    "model": "scraping.vacancy",
+    "pk": 3,
+    "fields": {
+        "url": "https://www.glassdoor.com/Job/prague-python-developer-junior-jobs-SRCH_IL.0,6_IC2296178_KO7,30.htm?includeNoSalaryJobs=true&jl=1006933461916",
+        "title": "Python Developer se znalost\u00ed AWS",
+        "company": "TIP IT Solutions",
+        "description": "Po\u017eadavky\r\nZku\u0161enosti s v\u00fdvojem v PYTHON\r\nZku\u0161enost s backend v\u00fdvojem (Django, Flask)\r\nZku\u0161enost s v\u00fdvojem REST API\r\n\r\nBude\u0161 m\u00edt velkou v\u00fdhodu, pakli\u017ee m\u00e1te zku\u0161enosti i s:\r\nV\u00fdvojem konverza\u010dn\u00edch asistent\u016f\r\nAWS\r\nJavou\r\nRASA frameworkem",
+        "city": 4,
+        "language": 1,
+        "timestamp": "2023-02-26"
+    }
+}
+]
